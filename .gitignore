@@ -20,3 +20,4 @@ routes/
 # IntelliJ stuff
 .idea/
 .idea/*
+.env
