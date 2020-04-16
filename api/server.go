@@ -14,7 +14,6 @@ var server = controllers.Server{}
 
 func Run() {
 	var err error
-	const port := 9000
 
 	err = godotenv.Load()
 	if err != nil {
@@ -27,5 +26,5 @@ func Run() {
 
 	seed.Load(server.DB)
 
-	server.Run(":" + port)
+	server.Run(":9000")
 }
